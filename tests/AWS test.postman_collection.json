@@ -1,0 +1,916 @@
+{
+	"variables": [],
+	"info": {
+		"name": "AWS Freshworks test",
+		"_postman_id": "e6d6613e-008b-b229-7968-8d09776bebd4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/auth/signup 0",
+			"request": {
+				"url": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/auth/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ali Nobari\",\n    \"email\": \"alinobari@hotmail.com\",\n    \"password\": \"alinobari\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "api/auth/signup 1",
+			"request": {
+				"url": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/auth/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ali Nobari1\",\n    \"email\": \"alinobari1@hotmail.com\",\n    \"password\": \"alinobari1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "api/auth/signup 2",
+			"request": {
+				"url": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/auth/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ali Nobari2\",\n    \"email\": \"alinobari2@hotmail.com\",\n    \"password\": \"alinobari2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "api/auth/login 0",
+			"request": {
+				"url": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"alinobari@hotmail.com\",\n    \"password\": \"alinobari\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "api/auth/login 1",
+			"request": {
+				"url": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"alinobari1@hotmail.com\",\n    \"password\": \"alinobari1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "api/auth/login 2",
+			"request": {
+				"url": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/auth/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"alinobari2@hotmail.com\",\n    \"password\": \"alinobari2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "store 0",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/store?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"store"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"room\": \"1\",\n\t\"month\": \"01\",\n\t\"day\": \"01\",\n\t\"hour\": \"01\",\n\t\"minute\": \"01\",\n\t\"hour_finish\": \"22\",\n\t\"minute_finish\": \"22\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "store 1",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/store?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"store"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"room\": \"1\",\n\t\"month\": \"02\",\n\t\"day\": \"02\",\n\t\"hour\": \"01\",\n\t\"minute\": \"01\",\n\t\"hour_finish\": \"22\",\n\t\"minute_finish\": \"22\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "store 2",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/store?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"store"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"room\": \"1\",\n\t\"month\": \"03\",\n\t\"day\": \"03\",\n\t\"hour\": \"01\",\n\t\"minute\": \"01\",\n\t\"hour_finish\": \"22\",\n\t\"minute_finish\": \"22\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "store 3",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/store?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"store"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"room\": \"1\",\n\t\"month\": \"04\",\n\t\"day\": \"04\",\n\t\"hour\": \"01\",\n\t\"minute\": \"01\",\n\t\"hour_finish\": \"22\",\n\t\"minute_finish\": \"22\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "store 4",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/store?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"store"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"room\": \"1\",\n\t\"month\": \"05\",\n\t\"day\": \"05\",\n\t\"hour\": \"01\",\n\t\"minute\": \"01\",\n\t\"hour_finish\": \"22\",\n\t\"minute_finish\": \"22\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "edit 0",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/edit/1?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"edit",
+						"1"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"room\": \"2\",\n\t\"month\": \"02\",\n\t\"day\": \"02\",\n\t\"hour\": \"02\",\n\t\"minute\": \"02\",\n\t\"hour_finish\": \"22\",\n\t\"minute_finish\": \"22\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "edit 1",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/edit/1?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"edit",
+						"1"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"room\": \"2\",\n\t\"month\": \"03\",\n\t\"day\": \"03\",\n\t\"hour\": \"02\",\n\t\"minute\": \"02\",\n\t\"hour_finish\": \"22\",\n\t\"minute_finish\": \"22\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "edit 2",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/edit/1?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"edit",
+						"1"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"room\": \"2\",\n\t\"month\": \"04\",\n\t\"day\": \"04\",\n\t\"hour\": \"02\",\n\t\"minute\": \"02\",\n\t\"hour_finish\": \"22\",\n\t\"minute_finish\": \"22\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "edit 3",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/edit/1?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"edit",
+						"1"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"room\": \"2\",\n\t\"month\": \"05\",\n\t\"day\": \"05\",\n\t\"hour\": \"02\",\n\t\"minute\": \"02\",\n\t\"hour_finish\": \"22\",\n\t\"minute_finish\": \"22\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "edit 4",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/edit/1?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"edit",
+						"1"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"room\": \"2\",\n\t\"month\": \"06\",\n\t\"day\": \"06\",\n\t\"hour\": \"02\",\n\t\"minute\": \"02\",\n\t\"hour_finish\": \"22\",\n\t\"minute_finish\": \"22\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete 0",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/delete/{id}?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"delete",
+						"{id}"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete 1",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/delete/{id}?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"delete",
+						"{id}"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "retrieve/rooms",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/retrieve/rooms?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"retrieve",
+						"rooms"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "retrieve/meetings",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/retrieve/meetings?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"retrieve",
+						"meetings"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "retrieve/meeting/room 0",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/retrieve/meeting/room?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"retrieve",
+						"meeting",
+						"room"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"room\": \"2\",\n\t\"month\": \"01\",\n\t\"day\": \"01\",\n\t\"hour\": \"01\",\n\t\"minute\": \"01\",\n\t\"month_finish\": \"12\",\n\t\"day_finish\": \"31\",\n\t\"hour_finish\": \"23\",\n\t\"minute_finish\": \"59\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "retrieve/meeting/room 1",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/retrieve/meeting/room?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"retrieve",
+						"meeting",
+						"room"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"room\": \"2\",\n\t\"month\": \"01\",\n\t\"day\": \"01\",\n\t\"hour\": \"01\",\n\t\"minute\": \"01\",\n\t\"month_finish\": \"04\",\n\t\"day_finish\": \"04\",\n\t\"hour_finish\": \"23\",\n\t\"minute_finish\": \"59\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "retrieve/meeting/user 0",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/retrieve/meeting/user?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"retrieve",
+						"meeting",
+						"user"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"alinobari@hotmail.com\",\n\t\"month\": \"01\",\n\t\"day\": \"01\",\n\t\"hour\": \"01\",\n\t\"minute\": \"01\",\n\t\"month_finish\": \"12\",\n\t\"day_finish\": \"31\",\n\t\"hour_finish\": \"23\",\n\t\"minute_finish\": \"59\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "retrieve/meeting/user 1",
+			"request": {
+				"url": {
+					"raw": "http://ec2-13-58-238-37.us-east-2.compute.amazonaws.com/api/meeting/retrieve/meeting/room?token=",
+					"protocol": "http",
+					"host": [
+						"ec2-13-58-238-37",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"api",
+						"meeting",
+						"retrieve",
+						"meeting",
+						"room"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"alinobari@hotmail.com\",\n\t\"month\": \"01\",\n\t\"day\": \"01\",\n\t\"hour\": \"01\",\n\t\"minute\": \"01\",\n\t\"month_finish\": \"04\",\n\t\"day_finish\": \"04\",\n\t\"hour_finish\": \"23\",\n\t\"minute_finish\": \"59\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
